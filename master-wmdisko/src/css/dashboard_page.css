@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+  
+  /* Navigasi */
+.sidebar {
+    position: fixed;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #468AF0;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .sidebar img {
+    padding: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+
+  .sidebar li:last-child {
+    position: absolute;
+    bottom: 0; 
+  }
+
+  .sidebar a {
+    display: block;
+    color: var(--bg);
+    text-decoration: none;
+    padding: 12px 16px;
+  }
+  
+  .sidebar a:hover {
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  .sidebar a:active {
+    color: #000000;
+  }
+
+/* Konten */
+.content {
+    margin-left: 200px;
+    padding: 0;
+  }
+
+/* Judul */
+  .content h1 {
+    margin-top: 5;
+    text-align: center;
+  }
+
+/* Deskripsi bawah judul */
+.content p {
+    margin-top: 0;
+    text-align: center;
+  }
+
+/* Category Navigation */
+.categoryNav {
+    width: 100%;
+    top: 0;
+    height: auto;
+    position: sticky;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .categoryNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .categoryNav a:hover {
+    border-radius: 0%;
+    background-color: #468AF0;
+    color: rgb(251, 251, 251);
+  }
+
+/* Chart Konten */
+.contentChart{
+    background-color: antiquewhite;
+    content: "";
+    display: flex;
+    clear: both;
+    height: 600px;
+    padding: 0px 0px 0px 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  canvas {
+    display: inline-block;
+    margin-right: 2%; 
+    box-sizing: border-box; /* agar padding termasuk dalam lebar elemen */
+  }
+  
+#myChart1 {
+  width: 2rem;
+}
+
+  /* @media screen and (max-width:60px) {
+    canvas {
+      width: 50%;
+    }
+  } */

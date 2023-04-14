@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://kit.fontawesome.com/b36a6d5652.js" crossorigin="anonymous"></script>
+<head>
+    <title>Monitoring: Dashboard</title>
+    <link rel="stylesheet" href="/master-wmdisko/src/css/dashboard_page.css" />
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <div class="sidebar">
+        <img src="/master-wmdisko/assets/img/diskominfologo.png">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-light fa-house"></i>&nbsp; Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp; Penilaian</a></li>
+            <li><a href="#"><i class="fa-solid fa-file"></i>&nbsp; Hasil</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>&nbsp; Logout</a></li>
+        </ul>
+    </div>
+  
+  <!-- Konten -->
+  <div class="content">
+    <!-- Category Navigation -->
+    <div class="categoryNav">
+        <a href="#">SD</a>
+        <a href="#">SMP</a>
+        <a href="#">SMA</a>
+        <a href="#">SMK</a>
+    </div>
+
+    <!-- Konten Chart -->
+    <div class="contentChart">
+
+        <!-- Chart 1 -->
+        <canvas id="myChart1"></canvas>
+        <script>
+        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yValues = [55, 49, 44, 24, 15];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
+        new Chart("myChart1", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "World Wide Wine Production 2018"
+            }
+          }
+        });
+        </script>
+
+        <!-- Chart 2 -->
+        <canvas id="myChart2"></canvas>
+        <script>
+            var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["red", "green","blue","orange","brown"];
+            
+            new Chart("myChart2", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "World Wine Production 2018"
+                }
+              }
+            });
+        </script>
+
+        <!-- Chart 3 -->
+        <canvas id="myChart3"></canvas>
+        <script>
+            var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["red", "green","blue","orange","brown"];
+            
+            new Chart("myChart3", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "World Wine Production 2018"
+                }
+              }
+            });
+        </script>
+
+        <!-- Chart 4 -->
+        <canvas id="myChart4"></canvas>
+        <script>
+            var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["red", "green","blue","orange","brown"];
+            
+            new Chart("myChart4", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "World Wine Production 2018"
+                }
+              }
+            });
+        </script> 
+        <!-- Chart 5 -->
+        <canvas id="myChart5"></canvas>
+        <script>
+            var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["red", "green","blue","orange","brown"];
+            
+            new Chart("myChart5", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "World Wine Production 2018"
+                }
+              }
+            });
+        </script>
+
+    </div>
+</body>
+</html>

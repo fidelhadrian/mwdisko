@@ -1,0 +1,164 @@
+:root{
+    --primary: #146c94; /*Header*/
+    --secondary: #19A7CE; /*Box/ sidebar*/
+    --bg: #f6f1f1; /*background*/
+    --font: #000000; /* tulisan*/
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    color:var(--font);
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.navbar{
+    display: flex; /*atur isi classnya jadi item flex*/
+    justify-content: space-between; /* jarak kanan kiri sama, sejajar vertikal*/
+    align-items: center; /*sejajar horizontal*/
+    padding: 1.5rem; /*rem=1.5 x 16px 5% x 16px*/
+    background-color: rgba(42, 42, 42, 80%);
+    border-bottom: 3px solid var(--secondary); /*bikin garis bawah*/
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    height: 5rem;
+    position: sticky;
+}
+
+.navbar img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    object-fit: contain; 
+}
+
+.navbar .navbar-logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--font);
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+    color: var(--bg);
+    display: inline-block; /*a ini iniline, gabisa dikasi margin, jadi dikasi inline block biar bisa*/
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    padding: 12px 16px
+}
+
+.navbar .navbar-nav a:hover{
+    border-radius: 3px;
+    background-color: var(--bg);
+    color: var(--font);
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--font);
+}
+/* 
+.navbar .navbar-nav a::after{
+    content:''; biar bisa atur dimensi
+    display: block;
+    padding: 0.1rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+} */
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-search a{
+    color: var(--bg);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-search a:hover{
+    color: var(--font)
+
+} 
+
+
+/* Sidebar */
+.sidebar {
+    display: flex   ; /*atur isi classnya jadi item flex*/
+    justify-content: space-between; /* jarak kanan kiri sama, sejajar vertikal*/
+    background-color:var(--primary);  
+    left:0;
+    z-index: 999;
+    height: 800px;
+    width: 12rem;
+    color: var(--bg);
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    position: sticky;
+  }
+  
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.sidebar li {
+    margin: 2rem 0;
+  }
+
+.sidebar li:last-child {
+    position: absolute;
+    bottom: 0; 
+  }
+
+.sidebar a {
+    display: block;
+    color: var(--bg);
+    text-decoration: none;
+    padding: 12px 16px;
+  }
+  
+.sidebar a:hover {
+    border-radius: 3px;
+    background-color: var(--bg);
+    color: var(--font);
+  }
+
+.sidebar a:active {
+    color: var(--font);
+  }
+
+
+/* Content */
+.tableContent {
+    display: block;
+    background-color: aquamarine;
+    margin-left: 12rem;
+    border-collapse: collapse;
+    width: auto;
+    z-index: 10000;
+}
