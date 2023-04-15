@@ -26,6 +26,15 @@
   .header h1 {
     font-size: 20px;
   }
+
+  .headerimage {
+    display: flex;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+  }
+
   
   /* Style the top navigation bar */
   .topnav {
@@ -56,7 +65,7 @@
     float: left;
     width: 17.5%;
 
-    /* Ini percobaan untuk membuat sticky */
+  /* Ini percobaan untuk membuat sticky */
     position: sticky;
     top: 2.69rem;
   }
@@ -123,28 +132,38 @@
 
   /* buat chartnya */
   .contentChart{
-    background-color: antiquewhite;
-    content: "";
     display: flex;
-    clear: both;
-    height: 600px;
-    padding: 0px 0px 0px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    max-height: 30vw;
+    padding: 0px 0px 10px 10px;
     white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: visible;
+    overflow-y: scroll;
   }
+
+  .box {
+    height: 200px;
+    margin: 10px;
+  }
+
   canvas {
-    display: inline-block;
-    margin-right: 2%; 
-    box-sizing: border-box; /* agar padding termasuk dalam lebar elemen */
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
   }
 
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
-      width: 100%;
+      width: 50%;
       padding: 0;
+    }
+    .contentChart{
+      /* height: 100%;
+      bottom: 10rem; */
     }
   }
   
@@ -157,23 +176,7 @@
   }
 
   h2 {
+    font-size: 1.3vw;
     text-align: center;
+    height: 4vh;
   }
-
-  .headerimage {
-    display: flex;
-    width: 20%;
-    margin-right: auto;
-    margin-left: auto;
-    align-content: center;
-  }
-
-/* buat style */
-
-
-.container {
-    max-height: 320px;
-    overflow-y: scroll;
-}
-
-/*  */
