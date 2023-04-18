@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Web</title>
+    <script src="https://kit.fontawesome.com/b36a6d5652.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/master-wmdisko/src/css/menambah_page.css" />
+</head>
+<body>
+    <!-- header -->
+<div class="header">
+    <img src="/master-wmdisko/assets/img/diskominfologo.png" alt="diskominfo" class="headerimage"/>
+    <h1>Website Monitoring Diskominfo Kota Semarang</h1>
+</div>
+
+<div class="topnav">
+  <a href="#" target="_blank">Dashboard </a>
+  <a href="#" target="_blank">Penilaian</a>
+  <a href="#" target="_blank">Hasil</a>
+  <a href="#" style="float:right"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</a>
+</div>
+
+<div>
+  <form>
+    <h3>Tambah Data</h3>
+    <div class="form-group">
+      <label for="nama">Nama Aplikasi</label>
+      <input type="text" id="nama" name="nama">
+    </div>
+    <div class="form-group">
+      <label for="deskripsi">Deskripsi Fungsi Aplikasi</label>
+      <input type="text" id="deskripsi" name="deskripsi">
+    </div>
+    <div class="form-group">
+      <label for="tanggal">Tanggal Pemantauan </label>
+      <input type="date" id="tanggal" name="tanggal">
+    
+    </div>
+    <div class="form-group">
+      <label style="margin-right: 2.69rem;">Status</label><br>
+      <input type="radio" id="aktif" name="status" value="aktif">
+      <label for="aktif">Aktif</label><br>
+      <input type="radio" id="suspend" name="status" value="suspend">
+      <label for="suspend">Suspend</label>
+    </div>
+    <div class="form-group">
+      <label style="margin-right: 2.69rem;">Status Berita</label><br>
+      <input type="radio" id="ada-berita" name="status-berita" value="ada-berita">
+      <label for="ada-berita">Ada Berita</label><br>
+      <input type="radio" id="tidak-ada-berita" name="status-berita" value="tidak-ada-berita">
+      <label for="tidak-ada-berita">Tidak Ada Berita</label>
+    </div>
+    <div class="form-group">
+      <label for="last-update">Last Update</label>
+      <input type="date" id="last-update" name="last-update">
+    </div>
+    <div class="form-group">
+      <label style="margin-right: 2.69rem;">Menggunakan Secure Connection</label><br>
+      <input type="radio" id="sudah" name="secure" value="sudah">
+      <label for="sudah">Sudah</label><br>
+      <input type="radio" id="belum" name="secure" value="belum">
+      <label for="belum">Belum</label>
+    </div>
+    <div class="form-group">
+      <label style="margin-right: 2.69rem;">Memiliki Logo</label><br>
+      <input type="radio" id="sudah-logo" name="logo" value="sudah-logo">
+      <label for="sudah-logo">Sudah</label><br>
+      <input type="radio" id="belum-logo" name="logo" value="belum-logo">
+      <label for="belum-logo">Belum</label>
+    </div>
+    <div class="form-group">
+      <label for="cms">Menggunakan CMS</label>
+      <input type="text" id="cms" name="cms">
+    </div>
+    <div class="form-group">
+      <label for="keterangan">Keterangan</label>
+      <input type="text" id="keterangan" name="keterangan"></textarea>
+    </div>
+  </form>
+  <div class="form-group">
+    <button class="btn-simpan" type="submit">Simpan</button>
+  </div>
+  <div class="popup-container">
+    <div class="popup">
+      <h2>Berhasil Disimpan</h2>
+      <button class="btn-ok">OK</button>
+    </div>
+  </div>
+</div>
+<script>
+    // Mendapatkan tombol simpan
+    var btnSimpan = document.querySelector('.btn-simpan');
+
+    // Mendapatkan popup container
+    var popupContainer = document.querySelector('.popup-container');
+
+    // Mendapatkan tombol OK pada popup
+    var btnOk = document.querySelector('.btn-ok');
+
+    // Menambahkan event listener pada tombol simpan
+    btnSimpan.addEventListener('click', function() {
+      // Menampilkan popup container
+      popupContainer.style.display = 'flex';
+    });
+
+    // Menambahkan event listener pada tombol OK pada popup
+    btnOk.addEventListener('click', function() {
+      // Menutup popup container
+      window.location.href = "penilaian_page2.html";
+    });
+</script>
+
+</body>
+</html>

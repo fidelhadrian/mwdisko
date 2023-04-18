@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    border-radius: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/master-wmdisko/assets/img/backgroundLogin.png');
+  background-size: cover;
+}
+
+.backgroundLogin {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.login-box {
+  display: flex;
+  text-align: center;
+  opacity: 100%;
+  width: 25rem;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.login-box h1{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.login-box label {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .backgroundLogin {
+    position: static;
+  }
+  
+  .login-box {
+    width: 100%;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #468AF0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #9104b4;
+}
+
+a:hover{
+  text-decoration: dashed;
+  color: #0a0d9a;
+}
+

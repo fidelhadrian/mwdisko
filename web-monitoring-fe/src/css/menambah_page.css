@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body {
+    margin: 0;
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+  }
+
+  /* Header Title */
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: #EAEAEA;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .header img{
+    border-radius: 0;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .headerimage {
+    display: flex;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    padding: 0.4rem;
+    top: 0px;
+    position: sticky;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #146C94;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+  }
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* buat formnya */
+  form {
+    width: 50%;
+    margin: 1.69vw auto;
+    margin-bottom: 1.69vw;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    font-size: 1.3vw;
+  }
+
+  form h3{
+  margin-top: 0;
+  text-align: center;
+  font-size: 2vw;
+  }
+
+  .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.69vw;
+  }
+
+.form-group label {
+  color: #000000;
+  display: inline-block;
+  align-items: center;
+  width: 200px;
+  text-align: left;
+  margin-left: 10px;
+
+}
+
+.form-group input{
+  margin-right: 10px;
+  
+}
+
+.form-group input[type="text"] {
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 1.3vw;
+  color: #555;
+  display: inline-flex;
+  width: 380px;
+  margin-right: 7px;
+}
+
+.form-group input[type="date"]{
+  display: inline-block;
+  font-size: 1.3vw;
+  padding: 3px;
+  width: 380px;
+  margin-right: 7px;
+}
+
+
+.form-group input[type="radio"] {
+  padding: 3px;
+  font-size: 10px;
+  color: #000000;
+  margin: 0;
+  margin-right: 7px;
+}
+
+
+button[type="submit"] {
+  margin-top: 0;
+  display: flex;
+  margin: auto;
+  background-color: #19A7CE;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #146C94;
+}
+
+/* pop up */
+.popup-container {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Popup */
+.popup {
+  font-size: 0.8rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  text-align: center;
+}
+
+/* OK Button */
+.btn-ok {
+  margin-top: 1rem;
+  background-color: #19A7CE;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 6.5px;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.btn-ok:active {
+  transform: scale(1.2,1.2);
+}
