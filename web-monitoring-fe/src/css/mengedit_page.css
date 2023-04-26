@@ -111,7 +111,9 @@
 }
 
 .form-group input[type="date"]{
+  border-radius: 5px;
   display: inline-block;
+  font-family: Arial;
   font-size: 1.3vw;
   padding: 3px;
   width: 380px;
@@ -144,6 +146,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #146C94;
 }
+
+.form-group select{
+  margin-right: 15.169vw; 
+  font-size: 1.3vw;
+  border-radius: 5px;
+  padding: 3px;
+}
+
 
 /* pop up */
 .popup-container {
