@@ -111,7 +111,9 @@
 }
 
 .form-group input[type="date"]{
+  border-radius: 5px;
   display: inline-block;
+  font-family: Arial;
   font-size: 1.3vw;
   padding: 3px;
   width: 380px;
@@ -127,6 +129,12 @@
   margin-right: 7px;
 }
 
+.form-group select{
+  margin-right: 15.169vw; 
+  font-size: 1.3vw;
+  border-radius: 5px;
+  padding: 3px;
+}
 
 button[type="submit"] {
   margin-top: 0;
