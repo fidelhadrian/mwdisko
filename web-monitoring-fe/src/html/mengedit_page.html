@@ -29,10 +29,24 @@
       <label for="nama">Nama Aplikasi</label>
       <input type="text" id="nama" name="nama">
     </div>
+    
+    <div class="form-group">
+      <label for="kategori">Kategori</label>
+      <select id="kategori" name="kategori">
+        <option value="SD">SD</option>
+        <option value="SMP">SMP</option>
+        <option value="Bidang Layanan &amp; Info">Bidang Layanan &amp; Info</option>
+        <option value="Kecamatan">Kecamatan</option>
+        <option value="Kelurahan">Kelurahan</option>
+        <option value="OPD Pemkot">OPD Pemkot</option>
+      </select>
+    </div>
+
     <div class="form-group">
       <label for="deskripsi">Deskripsi Fungsi Aplikasi</label>
       <input type="text" id="deskripsi" name="deskripsi">
     </div>
+
     <div class="form-group">
       <label for="tanggal">Tanggal Pemantauan </label>
       <input type="date" id="tanggal" name="tanggal">
@@ -71,13 +85,13 @@
       <label for="belum-logo">Belum</label>
     </div>
     <div class="form-group">
-      <label for="cms">Menggunakan CMS</label>
-      <input type="text" id="cms" name="cms">
+      <label style="margin-right: 2.69rem;">Menggunakan CMS</label><br>
+      <input type="radio" id="sudah-cms" name="cms" value="sudah-cms">
+      <label for="sudah-cms">Sudah</label><br>
+      <input type="radio" id="belum-cms" name="cms" value="belum-cms">
+      <label for="belum-cms">Belum</label>
     </div>
-    <div class="form-group">
-      <label for="keterangan">Keterangan</label>
-      <input type="text" id="keterangan" name="keterangan"></textarea>
-    </div>
+   
   </form>
   <div class="form-group">
     <button class="btn-simpan" type="submit">Simpan</button>
